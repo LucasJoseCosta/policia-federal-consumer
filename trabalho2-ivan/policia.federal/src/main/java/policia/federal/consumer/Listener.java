@@ -21,8 +21,6 @@ public class Listener {
 
             if (transacao.getValor() > 40000) {
                 logger.log(Level.WARNING, "ALERTA: Transação de valor elevado: {0}", transacao);
-            } else {
-                logger.log(Level.INFO, "Transação processada: {0}", transacao);
             }
 
             Thread.sleep(1000L);
