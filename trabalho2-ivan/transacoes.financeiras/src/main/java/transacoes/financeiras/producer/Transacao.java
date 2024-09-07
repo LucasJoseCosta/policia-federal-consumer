@@ -55,4 +55,12 @@ public class Transacao {
 	public void setVencimento(String vencimento) {
 		this.vencimento = vencimento;
 	}
+
+	@Override
+	public String toString() {
+		return "Transacao [codigo=" + codigo + ", cedente=" + cedente + ", pagador=" + pagador + ", valor=" + valor
+				+ ", vencimento=" + vencimento + "]";
+	}
+	
+	
 }
